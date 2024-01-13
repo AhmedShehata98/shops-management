@@ -13,40 +13,8 @@ import MenuItem from "@mui/material/MenuItem";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { useSetRecoilState } from "recoil";
-import { shopFormAtom, shopsAtom } from "../atoms/shops.atom";
+import { shopFormAtom } from "../atoms/shops.atom";
 import { shopsModalAtom } from "../atoms/modal.atom";
-
-function createData(
-  shopName: string,
-  shopCode: string,
-  location: string,
-  phoneNumber: string
-) {
-  return { shopName, shopCode, location, phoneNumber };
-}
-
-const rows = [
-  createData(
-    "Frozen yoghurt",
-    "159",
-    " oksodfksdopfksdofp asdasd",
-    "+01234567898"
-  ),
-  createData(
-    "Ice cream sandwich",
-    "237",
-    " oksodfksdopfksdofp asdasd",
-    "+01234567898"
-  ),
-  createData("Eclair", "262", " oksodfksdopfksdofp asdasd", "+01234567898"),
-  createData("Cupcake", "305", " oksodfksdopfksdofp asdasd", "+01234567898"),
-  createData(
-    "Gingerbread",
-    "356",
-    " oksodfksdopfksdofp asdasd",
-    "+01234567898"
-  ),
-];
 
 type Props = {
   onDelete: (id: string) => Promise<void>;

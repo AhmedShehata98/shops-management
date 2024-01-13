@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { getFirestore } from "firebase/firestore";
 import { FirebaseApp } from "firebase/app";
 

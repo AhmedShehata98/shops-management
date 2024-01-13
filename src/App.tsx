@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import AddShopsModalWrapper from "./components/AddShopsModalWrapper";
 import GmapsWrapper from "./components/GmapsWrapper";
@@ -14,7 +13,6 @@ function App() {
   const { db } = useFireStore({ app: firebaseApp });
   const {
     isLoading,
-    error,
     isError,
     shopsList,
     handleCreateShop,

@@ -18,7 +18,7 @@ export const usePosition = () => {
         setIsLoading(false);
         setIsError(false);
       },
-      (positionError) => {
+      () => {
         setIsLoading(false);
         setIsError(true);
       }

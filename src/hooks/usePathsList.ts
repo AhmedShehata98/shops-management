@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useEffect } from "react";
+import { useRecoilState } from "recoil";
 import { mapPathAtom } from "../atoms/mapPath.atom";
 
 type Props = {
